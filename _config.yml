@@ -1,42 +1,83 @@
-### your site title here
+# # # # # # # # # # # # #
+#   K i k o - p l u s   #
+# # # # # # # # # # # # #
 
-title: Made by Minseokism
-baseurl: "" # name of the repository
-email: lagender@gmail.com
-
-
-
-highlighter: rouge
-markdown: kramdown
-### exclude the instructions / write-up in the README.md
+# Basic
+name:               "Made by Minseokism"
 
 
-# Tracker
-analytics: UA-83979019-1
 
-# Comments
-disqus-shortname: minseokism
+author:
+  name:             minseokism
+  facebook:         minseokism
+  github:           minseokism
+  linkedin:         minseokism
+  telegram:         minseokism
+  email:            lagender@gmail.com
+
+# Google-analytics
+google-analytics:
+  id:               ""
+
+# Disqus
+disqus:
+  id:               "minseokism"
+
+# URL
+#url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
+url:                "https://minseokism.github.io" # use this url when develop
+baseurl:            "" # the subpath of your site, e.g. /blog
 
 
-#optimization
-#compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
- 
-paginate: 10
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Asia/Seoul
+permalink:          /:year-:month-:day/:title/
 
+# Pagination
+paginate:           5
+paginate_path:      /page:num/
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  input:            GFM
+
+# Navigation
+nav:
+  - name:           "About"
+    url:            "/about"
+  - name:           "Archive"
+    url:            "/archive"
+  - name:           "Tags"
+    url:            "/tags"
+  - name:           "Github"
+    url:            "https://github.com/minseokism"
+
+
+
+# Sass
 sass:
- style: compressed
+  sass_dir:         _sass
+  style:            :compressed
 
-exclude:
-- README.md
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
 
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
 
-gems: [jekyll-seo-tag, jekyll-paginate]
+exclude:            [vendor]
