@@ -74,7 +74,7 @@ boolean     false
 ```
 byte -> short -> int -> long -> float -> double
                   ↑
-        char    ─┘
+        char     ─┘
 ```
 ## 3. Reference Types
 ---
@@ -147,11 +147,13 @@ Abstarct Class는 실체 클래스들의 공통적인 특성을 추출해서 선
 
 abstract class 작성법 입니다.
 ```java
-public abstract class 클래스명 {
+public abstract class ClassName {
+
     // 필드
     // 생성자
     // 메소드
-    [public|protected] abstract 리턴타입 메소드명 (매개변수, ...) ; // 꼭 선언할 필요는 없습니다.
+
+    [public|protected] abstract ReturnType MethodName (parameter, ...) ; // 꼭 선언할 필요는 없습니다.
 }
 ```  
   
@@ -166,11 +168,11 @@ Java에서 Interface Type은 객체의 사용 방법을 정의한 Type입니다.
 
 interface 작성법은 다음과 같습니다.
 ```java
-[public] interface 인터페이스명 <T> {
-    [public static final] 타입 상수명 = 값;               // 상수
-    [public abstract] 리턴타입 메소드명 (매개변수, ...) ;  // 추상 메소드
-    [public] default 리턴타입 메소드명 (매개변수, ...) { } // default 메소드
-    [public] static 리턴타입 메소드명 (매개변수, ...) { }  // static 메소드
+[public] interface InterfaceName {
+    [public static final] Type ConstantName = Value;               // 상수
+    [public abstract] ReturnType MethodName (parameter, ...) ;  // 추상 메소드
+    [public] default ReturnType MethodName (parameter, ...) { } // default 메소드
+    [public] static ReturnType MethodName (parameter, ...) { }  // static 메소드
 }
 ```
   
@@ -200,27 +202,28 @@ public class ArrayTypes {
 자바의 열거형인 Enum은 서로 연관된 상수들의 집합을 뜻합니다. 
 - Enum Type 또한 class이기 때문에 생성자를 가질 수 있습니다. 하지만 직접 생성 할 수는 없습니다.
 - 키워드 Enum을 사용하게 되면 구현의 의도가 열거임을 분명히 알 수 있습니다.
+  
 ```java
 // java 파일로 생성
-public enum 이넘명 {
-    상수명, 상수명, 상수명 ...
+public enum EnumName {
+    ConstantName, ConstantName, ConstantName ...
 }
 
 // class 내부에서 선언
-public class 클래스명 {
+public class ClassName {
     private String name;
-    enum myEnum { 
-        Apple, Banana, Carrot
+    enum EnumName { 
+        ConstantName, ConstantName, ConstantNamet
     }
     ...
 }
 
 // class 외부에서 선언
-public enum myEnum { 
-    Apple, Banana, Carrot
+public enum EnumName { 
+    ConstantName, ConstantName, ConstantName
 }
 
-public class 클래스명 {
+public class ClassName {
     private String name;
     ...
 }
