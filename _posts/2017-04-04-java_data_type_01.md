@@ -169,10 +169,10 @@ Java에서 Interface Type은 객체의 사용 방법을 정의한 Type입니다.
 interface 작성법은 다음과 같습니다.
 ```java
 [public] interface InterfaceName {
-    [public static final] Type ConstantName = Value;               // 상수
-    [public abstract] ReturnType MethodName (parameter, ...) ;  // 추상 메소드
-    [public] default ReturnType MethodName (parameter, ...) { } // default 메소드
-    [public] static ReturnType MethodName (parameter, ...) { }  // static 메소드
+    [public static final] Type ConstantName = Value; // 상수
+    [public abstract] ReturnType MethodName (parameter, ...) ; // 추상 메소드
+    [public] default ReturnType MethodName (parameter, ...) { }// default 메소드
+    [public] static ReturnType MethodName (parameter, ...) { } // static 메소드
 }
 ```
   
