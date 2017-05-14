@@ -12,3 +12,4 @@ ArrayList와 LinkedList는 모두 List를 구현한 클래스 입니다. 두 클
 ### Java Collection Framework
 ArrayList와 LinkedList를 알아보기 전에 JCF(Java Collection Framework)에 대해 먼저 알아볼까합니다.
 
+![JCF](/images/20170427/JCF.png){: .center-image}
