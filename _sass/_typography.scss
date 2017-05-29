@@ -111,7 +111,7 @@ dd {
 }
 
 ul {
-  list-style: inside circle;
+  list-style: inside;
   padding-left: 0;
 
   li {
@@ -121,7 +121,7 @@ ul {
   ul,
   ol {
     list-style: inside;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: .25rem;
     margin-bottom: .5rem;
   }
