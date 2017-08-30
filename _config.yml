@@ -5,8 +5,6 @@
 # Basic
 name:               "Made by Minseokism"
 
-
-
 author:
   name:             minseokism
   facebook:         minseokism
@@ -53,8 +51,6 @@ nav:
   - name:           "Github"
     url:            "https://github.com/minseokism/minseokism.github.io"
 
-
-
 # Sass
 sass:
   sass_dir:         _sass
@@ -79,5 +75,6 @@ defaults:
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
 
 exclude:            [vendor]
